@@ -9,7 +9,12 @@ import {
   LogOut, 
   GraduationCap,
   Menu,
-  X
+  X,
+  Users,
+  Trophy,
+  Heart,
+  BookOpen,
+  Video
 } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -24,6 +29,11 @@ const DashboardSidebar = () => {
     { icon: MessageCircle, label: "Messages", path: "/dashboard/chat" },
     { icon: Calendar, label: "Meetings", path: "/dashboard/meetings" },
     { icon: Star, label: "Feedback", path: "/dashboard/feedback" },
+    { icon: Users, label: "Community", path: "/dashboard/community" },
+    { icon: Video, label: "Events", path: "/dashboard/events" },
+    { icon: BookOpen, label: "Interview Prep", path: "/dashboard/interview-prep" },
+    { icon: Trophy, label: "Leaderboard", path: "/dashboard/leaderboard" },
+    { icon: Heart, label: "Fundraising", path: "/dashboard/fundraising" },
   ];
 
   const handleLogout = () => {

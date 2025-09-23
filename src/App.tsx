@@ -14,6 +14,11 @@ import Meetings from "./pages/Meetings";
 import Feedback from "./pages/Feedback";
 import Profile from "./pages/Profile";
 import ProfileView from "./pages/ProfileView";
+import Community from "./pages/Community";
+import Events from "./pages/Events";
+import InterviewPrep from "./pages/InterviewPrep";
+import Leaderboard from "./pages/Leaderboard";
+import Fundraising from "./pages/Fundraising";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +39,11 @@ const App = () => (
           <Route path="/dashboard/feedback" element={<Feedback />} />
           <Route path="/dashboard/profile" element={<Profile />} />
           <Route path="/dashboard/profile/:id" element={<ProfileView />} />
+          <Route path="/dashboard/community" element={<Community />} />
+          <Route path="/dashboard/events" element={<Events />} />
+          <Route path="/dashboard/interview-prep" element={<InterviewPrep />} />
+          <Route path="/dashboard/leaderboard" element={<Leaderboard />} />
+          <Route path="/dashboard/fundraising" element={<Fundraising />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
