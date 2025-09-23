@@ -11,32 +11,38 @@ const Landing = () => {
     {
       icon: Network,
       title: "Smart Networking",
-      description: "Connect with alumni and students based on shared interests, skills, and career paths."
+      description: "Connect with alumni and students based on shared interests, skills, and career paths.",
+      path: "/dashboard/search"
     },
     {
       icon: MessageCircle,
       title: "Real-time Chat",
-      description: "Engage in meaningful conversations through our integrated messaging system."
+      description: "Engage in meaningful conversations through our integrated messaging system.",
+      path: "/dashboard/chat"
     },
     {
       icon: Calendar,
       title: "Meeting Scheduler",
-      description: "Schedule mentorship sessions and networking meetings with ease."
+      description: "Schedule mentorship sessions and networking meetings with ease.",
+      path: "/dashboard/meetings"
     },
     {
       icon: Star,
       title: "Feedback System",
-      description: "Build trust through transparent ratings and feedback from the community."
+      description: "Build trust through transparent ratings and feedback from the community.",
+      path: "/dashboard/feedback"
     },
     {
       icon: Target,
       title: "Career Goals",
-      description: "Get matched with mentors who can help you achieve your professional objectives."
+      description: "Get matched with mentors who can help you achieve your professional objectives.",
+      path: "/profile-setup"
     },
     {
       icon: Shield,
       title: "Verified Profiles",
-      description: "Connect with confidence through our verified alumni and student network."
+      description: "Connect with confidence through our verified alumni and student network.",
+      path: "/dashboard/profile"
     }
   ];
 
@@ -95,7 +101,7 @@ const Landing = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="card-interactive group">
+              <Card key={index} className="card-interactive group cursor-pointer" onClick={() => feature.path && navigate(feature.path)}>
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className="w-6 h-6 text-primary-foreground" />

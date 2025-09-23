@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -18,6 +19,7 @@ import {
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
   const [filters, setFilters] = useState({
     userType: '',
     company: '',
@@ -237,7 +239,7 @@ const Search = () => {
             {/* Profile Cards Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {filteredProfiles.map((profile) => (
-                <Card key={profile.id} className="card-interactive group">
+                <Card key={profile.id} className="card-interactive group cursor-pointer" onClick={() => navigate(`/dashboard/profile/${profile.id}`)}>
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       {/* Avatar */}
