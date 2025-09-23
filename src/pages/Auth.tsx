@@ -38,14 +38,14 @@ const Auth = () => {
             <GraduationCap className="w-6 h-6 text-primary-foreground" />
           </div>
           <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Alumni Connect
+            GradConnect
           </span>
         </Link>
 
         <Card className="card-elevated">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold">
-              {isLogin ? 'Welcome Back' : 'Join Alumni Connect'}
+              {isLogin ? 'Welcome Back' : 'Join GradConnect'}
             </CardTitle>
             <CardDescription>
               {isLogin ? 'Sign in to your account' : 'Create your account to get started'}

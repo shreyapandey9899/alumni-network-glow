@@ -91,7 +91,7 @@ const Landing = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose Alumni Connect?
+              Why Choose GradConnect?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our platform is designed to foster meaningful connections and accelerate career growth 
@@ -161,7 +161,7 @@ const Landing = () => {
             onClick={() => navigate('/auth')}
             className="btn-professional px-8 py-6 text-lg"
           >
-            Join Alumni Connect Today
+            Join GradConnect Today
             <Users className="ml-2 h-5 w-5" />
           </Button>
         </div>
@@ -176,11 +176,11 @@ const Landing = () => {
                 <GraduationCap className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Alumni Connect
+                GradConnect
               </span>
             </div>
             <p className="text-muted-foreground">
-              © 2024 Alumni Connect. Connecting generations of learners.
+              © 2024 GradConnect. Connecting generations of learners.
             </p>
           </div>
         </div>

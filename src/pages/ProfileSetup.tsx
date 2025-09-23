@@ -73,7 +73,7 @@ const ProfileSetup = () => {
               <GraduationCap className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Alumni Connect
+              GradConnect
             </span>
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-2">Complete Your Profile</h1>
